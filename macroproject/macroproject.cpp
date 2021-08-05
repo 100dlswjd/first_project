@@ -49,20 +49,32 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		case VK_LEFT:
 			SetCursorPos(x-5,y);
 			x = x - 5;
+			if (x < 0) {
+				x = 0;
+			}
 			//MessageBox(hWnd, ,TEXT("screen size"), MB_OK)
 			return 0;
 		case VK_UP:
 			SetCursorPos(x, y-5);
 			y = y - 5;
+			if (y < 0) {
+				y = 0;
+			}
 			//MessageBox(hWnd, TEXT("措面 郴侩"), TEXT("措面 力格"), MB_OKCANCEL);
 			return 0;
 		case VK_RIGHT:
 			SetCursorPos(x+5, y);
 			x = x + 5;
+			if (x > GetSystemMetrics(SM_CXSCREEN)) {
+				x = GetSystemMetrics(SM_CXSCREEN);
+			}
 			return 0;
 		case VK_DOWN:
 			SetCursorPos(x, y+5);
 			y = y + 5;
+			if (y > GetSystemMetrics(SM_CYSCREEN)) {
+				y = GetSystemMetrics(SM_CYSCREEN);
+			}
 			return 0;
 		}
 	case WM_DESTROY:
