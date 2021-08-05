@@ -5,6 +5,9 @@ HINSTANCE g_hInst;
 HWND hWndMain;
 LPCTSTR lpszClass = TEXT("macro_project");
 
+int x = GetSystemMetrics(SM_CXSCREEN) / 2;
+int y = GetSystemMetrics(SM_CYSCREEN) / 2;
+
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdParam, int nCmdShow) {
 	HWND hWnd;
 	MSG Message;
@@ -37,8 +40,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmd
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam) {
 	HDC hdc;
 	PAINTSTRUCT ps;
-	int x = GetSystemMetrics(SM_CXSCREEN) / 2;
-	int y = GetSystemMetrics(SM_CYSCREEN) / 2;
 
 	switch (iMessage) {
 	case WM_CREATE:
