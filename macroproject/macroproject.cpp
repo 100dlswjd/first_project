@@ -43,6 +43,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 
 	switch (iMessage) {
 	case WM_CREATE:
+		SetCursorPos(x, y);
 		return 0;
 	case WM_KEYDOWN:
 		switch (wParam) {
@@ -65,15 +66,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		case VK_RIGHT:
 			SetCursorPos(x+5, y);
 			x = x + 5;
-			if (x > GetSystemMetrics(SM_CXSCREEN)) {
-				x = GetSystemMetrics(SM_CXSCREEN);
+			if (x > GetSystemMetrics(SM_CXVIRTUALSCREEN)) {
+				x = GetSystemMetrics(SM_CXVIRTUALSCREEN);
 			}
 			return 0;
 		case VK_DOWN:
 			SetCursorPos(x, y+5);
 			y = y + 5;
-			if (y > GetSystemMetrics(SM_CYSCREEN)) {
-				y = GetSystemMetrics(SM_CYSCREEN);
+			if (y > GetSystemMetrics(SM_CYVIRTUALSCREEN)) {
+				y = GetSystemMetrics(SM_CYVIRTUALSCREEN);
 			}
 			return 0;
 		}
