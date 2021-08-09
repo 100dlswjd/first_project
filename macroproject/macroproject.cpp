@@ -4,9 +4,12 @@ LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 HINSTANCE g_hInst;
 HWND hWndMain;
 LPCTSTR lpszClass = TEXT("macro_project");
+<<<<<<< HEAD
 LPPOINT mousePos;
 BOOL GetCursorPos(mousePos);
 
+=======
+>>>>>>> 758c84a45564bdcad4a3dcc19255edca6cf10dd1
 
 int x = GetSystemMetrics(SM_CXSCREEN) / 2;
 int y = GetSystemMetrics(SM_CYSCREEN) / 2;
