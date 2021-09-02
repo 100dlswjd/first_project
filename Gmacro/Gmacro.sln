@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gmacro", "Gmacro.vcxproj", "{935C0913-B849-4289-9004-59B25C09FC13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{935C0913-B849-4289-9004-59B25C09FC13}.Debug|x64.ActiveCfg = Debug|x64
+		{935C0913-B849-4289-9004-59B25C09FC13}.Debug|x64.Build.0 = Debug|x64
+		{935C0913-B849-4289-9004-59B25C09FC13}.Debug|x86.ActiveCfg = Debug|Win32
+		{935C0913-B849-4289-9004-59B25C09FC13}.Debug|x86.Build.0 = Debug|Win32
+		{935C0913-B849-4289-9004-59B25C09FC13}.Release|x64.ActiveCfg = Release|x64
+		{935C0913-B849-4289-9004-59B25C09FC13}.Release|x64.Build.0 = Release|x64
+		{935C0913-B849-4289-9004-59B25C09FC13}.Release|x86.ActiveCfg = Release|Win32
+		{935C0913-B849-4289-9004-59B25C09FC13}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {822DDAFC-D230-4597-8E62-B58D5B97A774}
+	EndGlobalSection
+EndGlobal
